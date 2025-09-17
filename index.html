@@ -3,12 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My 30MFF Film</title>
+  <title>Chai Latte Experience</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Film Page</h1>
-  <p>This is where I’ll share my 30MFF project!</p>
+  <!-- HEADER / MENU -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#cart">Cart <span id="cart-count">0</span></a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <div class="home-content">
+      <video src="video/your-chai-video.mp4" controls width="600"></video>
+      <h1>Welcome to Your Chai Latte Experience</h1>
+      <button id="to-menu">Build Your Chai</button>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu">
+    <h2>CHAI LATTE</h2>
+    <img src="images/chai-latte.png" alt="Chai Latte" class="menu-image">
+
+    <div class="menu-options">
+      <!-- Temperature -->
+      <div class="option-group">
+        <h3>Temperature</h3>
+        <button class="temp-btn">Hot</button>
+        <button class="temp-btn">Cold</button>
+      </div>
+
+      <!-- Size -->
+      <div class="option-group">
+        <h3>Size</h3>
+        <button class="size-btn">Small</button>
+        <button class="size-btn">Medium</button>
+        <button class="size-btn">Large</button>
+      </div>
+
+      <!-- Sweetness -->
+      <div class="option-group">
+        <h3>Sweetness</h3>
+        <button id="sweet-minus">-</button>
+        <span id="sweetness">50%</span>
+        <button id="sweet-plus">+</button>
+      </div>
+
+      <!-- Milk -->
+      <div class="option-group">
+        <h3>Milk</h3>
+        <button class="milk-btn">Whole</button>
+        <button class="milk-btn">Oat</button>
+        <button class="milk-btn">Almond</button>
+      </div>
+
+      <!-- Add to Cart -->
+      <button id="add-to-cart" style="display:none;">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- CART SECTION -->
+  <section id="cart">
+    <h2>Cart</h2>
+    <div id="cart-items"></div>
+    <button id="checkout-btn">Proceed to Checkout</button>
+    <p id="thank-you" style="display:none;">Thank you for your order! 🫖</p>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about">
+    <h2>About Us</h2>
+    <img src="images/about-chai.jpg" alt="About Chai Latte" class="about-image">
+    <p>We are passionate chai lovers! Chai lattes are a mix of tea, spices, milk, and love. Customize your perfect cup and enjoy the cozy experience!</p>
+  </section>
+
+  <!-- SOCIALS SECTION -->
+  <section id="socials">
+    <h2>Follow Us</h2>
+    <ul class="social-links">
+      <li><a href="#"><img src="images/instagram.png" alt="Instagram">Instagram</a></li>
+      <li><a href="#"><img src="images/twitter.png" alt="Twitter">Twitter</a></li>
+      <li><a href="#"><img src="images/tiktok.png" alt="TikTok">TikTok</a></li>
+      <li><a href="#"><img src="images/phone.png" alt="Phone">+123 456 7890</a></li>
+    </ul>
+  </section>
+
   <script src="script.js"></script>
 </body>
 </html>

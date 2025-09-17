@@ -89,18 +89,15 @@ button:hover{
 }
 
 /* MENU SECTION */
-.menu-image{
-  width:250px;
-  margin:2rem 0;
+.menu-options{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* space between options */
+  max-height: 80vh; /* ensures button stays visible */
+  overflow-y: auto;
 }
-.option-group{
-  margin:1.5rem 0;
-}
-#sweetness{
-  margin:0 1rem;
-  font-weight:bold;
-  font-size:1.5rem;
-}
+
 
 /* CART SECTION */
 #cart-items{
@@ -128,12 +125,13 @@ p{
 .social-links{
   list-style:none;
   display:flex;
-  justify-content:center;
-  gap:3rem;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center horizontally */
+  gap: 1.5rem;            /* space between items */
   font-size:1.5rem;
 }
 .social-links img{
-  width:32px;
+  width:40px;
   vertical-align:middle;
   margin-right:.5rem;
 }
